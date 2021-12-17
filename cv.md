@@ -1,24 +1,24 @@
-### **Dzmitry Miatelitsa**
+### _**Dzmitry Miatelitsa**_
 
 ![myfoto](https://psv4.userapi.com/c537232/u10426420/docs/d49/2675e492266a/Foto_CV_superMini.jpg?extra=ajjPRnr82m3kilLtwoqfr_8bz_sKZDqdVhG3fpQ4FtwOrBQevUBE9Q7vd4VMwZoy1otssxS8hH5ExteCohquoS2i6jRfa1EQsTw3Ns5aNjBQq4F80l6K3qX-K4nxYgJgt79nA6oj8Nq7SM8ZcNj2sx8g6A)
 
 **Address:**
-Belarus, Grodno. 
+*Belarus, Grodno.* 
 
 **Phone:**
-+375292877273
+*+375292877273*
 
 **Email:**
-dmitry.metelitza@gmail.com
+*dmitry.metelitza@gmail.com*
 
 **GitHub:**
-dmitrymetelitza
+*dmitrymetelitza*
 
 **Discord:**
-dmitry.metelitza#2851
+*dmitry.metelitza#2851*
 
 **VK:**
-https://vk.com/dimokei
+*https://vk.com/dimokei*
 ___
 ### **Summary** 
 *Seeking for position of JS Front-End. I'm a motivated guy with 
@@ -39,8 +39,14 @@ ___
 * AutoCad;
 ___
 ### **Code example**
+```import { calculateDistanceBetweenTowns } from 'hexlet-basics/got';
 
+const from = 'The Twins';
+const to = 'The Eyrie';
+const distans = calculateDistanceBetweenTowns(`${from}-${to}`);
 
+console.log(distans);
+```
 
 ___
 ### **Languages**
