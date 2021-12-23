@@ -1,1 +1,1 @@
-ttps://dmitrymetelitza.github.io/rsschool-cv/cv
+https://dmitrymetelitza.github.io/rsschool-cv/
