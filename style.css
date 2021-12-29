@@ -120,22 +120,22 @@ li{
      color:  #fecb00;
 }
 .contacts_img_addres{
-    background-image: url(https://img.icons8.com/ios/50/ffffff/marker--v1.png);  
+    background-image: url(img/location.png);  
 }
 .contacts_img_tel{
-    background-image: url(https://img.icons8.com/ios/50/ffffff/apple-phone.png);
+    background-image: url(img/phone.png);
 }
 .contacts_img_mail{
-    background-image: url(https://img.icons8.com/pastel-glyph/64/ffffff/new-post--v2.png);
+    background-image: url(img/mail.png);
 }
 .contacts_img_git{
-    background-image: url(https://img.icons8.com/fluency-systems-regular/48/ffffff/github.png);
+    background-image: url(img/github.png);
 }
 .contacts_img_discord{
-    background-image: url(https://img.icons8.com/ios/50/ffffff/discord-logo--v1.png);
+    background-image: url(img/discord.png);
 }
 .contacts_img_vk{
-    background-image: url(https://img.icons8.com/ios/50/ffffff/vk-com.png);
+    background-image: url(img/vk.png);
 }
 
 /* MY SKILL */
