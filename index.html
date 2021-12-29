@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My cv</title>
+    <link rel="icon" href="img/whale.png"/>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="menu">
+      <nav class="navigation">
+              <a href="#adout" class="navigation_text">About me</a>
+              <a href="#contact" class="navigation_text">Contacts</a>
+              <a href="#skill" class="navigation_text">Skills</a>
+              <a href="#educat" class="navigation_text">Education</a>
+              <a href="#langu" class="navigation_text">Languages</a>
+      </nav>
+</header>
+<main class="main">
+    <div class="left">
+        <div class="foto">
+            <img src="img/FotoCV.jpg"
+             alt="my_foto"
+             width="350"
+             height="225"> 
+        </div>
+        <section class="contacts">
+            <h2 class="heading_left" id="contact">Contact</h2>
+            <ul class="contacs_list">
+                <li class="contacts_text contacts_img_addres"><a class="new" href="https://www.google.com/maps/place/%D0%93%D1%80%D0%BE%D0%B4%D0%BD%D0%BE/@53.6842292,23.7107684,11z/data=!3m1!4b1!4m5!3m4!1s0x46dfd64beac55d1d:0xf013fd26569718c0!8m2!3d53.6687634!4d23.8222673!5m1!1e1?hl=ru-RU" target="_blank">Address:  Belarus, Grodno.</a></li>
+                <li class="contacts_text contacts_img_tel"><a  class="new" href="tel:+375292877273">Phone: +375292877273 </a></li>
+                <li class="contacts_text contacts_img_mail"><a  class="new"  href="mailto:dmitry.metelitza@gmail.com">Gmail: dmitry.metelitza@gmail.com </a></li>
+                <li class="contacts_text contacts_img_git"><a class="new" href="https://github.com/dmitrymetelitza" target="_blank">GitHub: dmitrymetelitza </a></li>
+                <li class="contacts_text contacts_img_discord"><a class="new">Discord: dmitry.metelitza#2851</a></li>
+                <li class="contacts_text contacts_img_vk"><a class="new" href="https://vk.com/dimokei" target="_blank"> VK Dzmitry Miatelitsa</a>
+            </ul>         
+        </section> 
+        <section class="hard_skills">
+            <div class="line"></div>
+            <h2 class="heading_left" id="skill">Skills</h2>
+            <ul class="skill_list">
+                <li class="skill_name">HTML
+                    <div class="block-1">
+                        <div class="block-html"></div>
+                    </div>
+                </li>
+                <li class="skill_name">CSS
+                       <div class="block-1">
+                           <div class="block-css"></div>
+                       </div>
+                </li>
+                <li class="skill_name">JS
+                    <div class="block-1">
+                        <div class="block-js"></div>
+                    </div>
+                </li>
+                <li class="skill_name">AUTOCAD
+                    <div class="block-1">
+                        <div class="block-autocad"></div>
+                    </div>
+                </li>
+                <li class="skill_name">Git&GitHub
+                    <div class="block-1">
+                        <div class="block-git"></div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="languages">
+            <div class="line"></div>
+            <h2 class="heading_left" id="langu">Languages</h2>
+            <ul class="languages_list">
+                <li><p class="lang russia">RUSSIAN</p>
+                     <p class="leavel">Native</p>
+                </li>
+                <li><p class="lang eng">ENGLISH</p>
+                    <p class="leavel">Pre-Intermediate</p>
+                </li>
+                <li><p class="lang pol">POLISH</p>
+                    <p class="leavel">Intermediate</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div class="right">
+        <section class="name">
+            <h1 class="my_name">Dmitry Metelitza</h1>
+            <h3 class="work_name">Frontend developer</h3>
+        </section>
+        <section class="about_me">
+            <h3 class="heading_right" id="about">About me</h3>
+            <p class="about_text"> Seeking for position of JS Front-End developer. I'm a motivated guy with 
+                great passion for technology and software development. Seeking 
+                for a position of JS Front-End developer., but still open to any new 
+                technology. I сan work well in a team and find clear 
+                communication important. 
+                Besides that, I like music, have a passion for traveling and bicycle 
+                rides.</p>
+        </section>
+        <section class="education">
+            <h3 class="heading_right" id="educat">Education</h3>
+            <p class="about_text">Yanka Kupala State University of Grodno / Faculty of Engineering and Construction</p>
+        </section>
+        <section class="code_example">
+            <h3 class="heading_right">Code example</h3>
+            <div class=code_js>
+ <pre class="about_text">
+  <code>
+          function a() {
+            console.log('a: вызываем b');
+            b();
+            console.log('a: готово);
+          }
+         function b() {
+            console.log('b: вызываем c');
+            c();
+            console.log('b: готово);
+         }
+         function c() {
+            console.log('c: генерируем ошибку ');
+            throw new Error ('с ошибка');
+            console.log('c: готово);
+         }
+         function d() {
+            console.log('d: вызываем c');
+            c();
+            console.log('d: готово);
+         }
+                    
+            try {
+            a();
+         } catch(err) {
+           console.log(err.stack);
+         }
+            try {
+             d();
+         } catch(err) {
+            console.log(err.stack);
+         }
+  </code>
+ </pre>
+</div>
+         </section>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+            <a href="https://github.com/dmitrymetelitza"><img src="https://logodownload.org/wp-content/uploads/2019/08/github-logo.png" 
+                      width="100" 
+                      height="70" 
+                      alt="MyGitHub">
+                </a>
+            <p class="year">2021</p>
+               <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school-og.png" 
+                      width="100" 
+                      height="70" 
+                      alt="RSSchool">
+                </a>
+    </div>
+</footer>
+</body>
+</html>
