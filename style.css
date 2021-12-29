@@ -1,13 +1,317 @@
-
-body{
-    width: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
-.one{
-    font-size: 16px;
+pre {
+    margin: 0;
+    display: block;
+}
+body{
+
+    margin: 0;
+    width: 1000px;  
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+}
+*,
+*::after,
+*::before
+{
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+
+/* MENU */
+.menu{
+    position: sticky;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    z-index: 1000;
+}
+.navigation{
+    position: sticky;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.navigation_text {
+    display:inline-block;
+    text-decoration: none;
+    vertical-align: top;
+    color: black;
+    margin: 10px 46px;
+    transition: color .2s linear;
+}
+.navigation_text:hover{
+    color: #fecb00;
+}
+
+/* MAIN*/
+.main{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    height: auto;
+    width: auto;
+}
+/* LEFT */
+.heading_left{
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffffff;
+    
+}
+.left{
+    margin: 0;
+    width: 350px;
+    background: #000000;
+}
+.foto{
+    margin-top: 0px;
+    position: relative;
+}
+.line{
+    width: 70%;
+    height: 5px;
+    background: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50%;
+}
+
+/* CONTACT */
+.contacts{
+    font-size: 25px;
+     color: rgb(255, 255, 255);
+}
+.contacs_list{
+  padding-inline-start: 10px;  
+  margin-bottom: 40px;
+}
+
+.contacts_text{
+    min-height: 30px;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: left center;
+    margin-top: 3px;
+    font-size: 18px;
+}
+.new{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color .2s linear;
+}
+.new:hover{
+     color:  #fecb00;
+}
+.contacts_img_addres{
+    background-image: url(img/location.png);  
+}
+.contacts_img_tel{
+    background-image: url(img/phone.png);
+}
+.contacts_img_mail{
+    background-image: url(img/mail.png);
+}
+.contacts_img_git{
+    background-image: url(img/github.png);
+}
+.contacts_img_discord{
+    background-image: url(img/discord.png);
+}
+.contacts_img_vk{
+    background-image: url(img/vk.png);
+}
+
+/* MY SKILL */
+/* .hard_skills{
+   
+} */
+.skill_list{
+    margin-left: auto;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    
+}
+.skill_name{
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 10px auto;
+    margin-left: 10px;
+}
+.block-1{
+    position: relative; /* ÐžÑ‚Ð½Ð¾ÑÐ¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ðµ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¾Ð½Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ */
+    background: #6a8397; /* Ð¡Ð¸Ð½Ð¸Ð¹ Ñ†Ð²ÐµÑ‚ Ñ„Ð¾Ð½Ð° */
+    height: 9px; /* ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ Ð²Ñ‹ÑÐ¾Ñ‚Ð° */
+    width: 100%; 
+    max-width: 200px; /* ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ ÑˆÐ¸Ñ€Ð¸Ð½Ð° Ð±Ð»Ð¾ÐºÐ° Ñ‡Ñ‚Ð¾ Ð± ÑÐ¼ÐµÑÑ‚Ð¸Ñ‚ÑŒ Ð² Ð¿Ð°Ð²Ð¾*/
+    margin-left: auto; /* Ð¡Ð¼ÐµÑ‰Ð°ÐµÐ¼ Ð±Ð»Ð¾Ðº */
+    /* padding: 20px; ÐŸÐ¾Ð»Ñ */
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+.block-html, .block-css, .block-js, .block-autocad, .block-git{
+    position: absolute; /* ÐÐ±ÑÐ¾Ð»ÑŽÑ‚Ð½Ð¾Ðµ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¾Ð½Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ */
+    left: 0; /* ÐŸÐ¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° */
+     bottom: 0; 
+    background: #feea3f; /* Ð–Ñ‘Ð»Ñ‚Ñ‹Ð¹ Ñ†Ð²ÐµÑ‚ Ñ„Ð¾Ð½Ð° */
+    height: 5px; /* Ð Ð°Ð·Ð¼ÐµÑ€Ñ‹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° */
+    width: 50px; 
+}
+.block-html{
+    width: 30%; /* Ð Ð°Ð·Ð¼ÐµÑ€Ñ‹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° */
+}
+.block-css{
+    width: 20%; /* Ð Ð°Ð·Ð¼ÐµÑ€Ñ‹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° */
+}
+.block-js{
+    width: 10%; /* Ð Ð°Ð·Ð¼ÐµÑ€Ñ‹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° */
+}
+.block-autocad{
+    width: 70%; /* Ð Ð°Ð·Ð¼ÐµÑ€Ñ‹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° */
+}
+.block-git{
+    width: 15%; /* Ð Ð°Ð·Ð¼ÐµÑ€Ñ‹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° */
+}
+
+/* LANGUAGES */
+/* .languages{
+   
+} */
+.languages_list{
+    margin-left: 10px;
+    padding: 0%;
+}
+/* ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑÐ·Ñ‹ÐºÐ° */
+.lang{
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-right: 5px;
+    width: 15px;
+    height: 23px;
+}
+/* Ð£Ñ€Ð¾Ð²ÐµÐ½ÑŒ ÑÐ·Ñ‹ÐºÐ° */
+.leavel{
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 4px;
+    margin-left: 40px;
+}
+.russia::before{
+    content: "";
+    background-image: url(https://img.icons8.com/color/48/000000/russian-federation-circular.png);
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: left center;
+}
+.eng::before{
+    content: "";
+    background-image: url(https://img.icons8.com/color/50/000000/great-britain-circular.png);
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: left center;
+}
+.pol::before{
+    content: "";
+    background-image: url(https://img.icons8.com/color/48/000000/poland-circular.png);
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: left center;
+}
+/* RIGHT */
+.right{
+    margin: 0;
+    box-sizing: border-box;
+    background: rgb(255, 255, 255);
+}
+
+ .name{
+    margin-top: 40px;
+}
+.my_name{ /* Dmitry Metelitsa */
+    font-size: 50px;
+    font-variant: small-caps;
+    display: block;
     color: rgb(0, 0, 0);
-   padding: auto;
+    margin-top: 40px;
+    text-align: left;
+    margin-left: 50px;
+}
+/*  Frontend developer */
+.work_name{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-variant: small-caps;
+    margin-top: 0px;
+    text-align: left;
+    margin-left: 50px;
+    font-style: italic;
+    margin-bottom: 150px;
+}
+/* Ð—Ð°Ð³Ð»Ð°Ð²Ð¾Ðº */
+.heading_right{
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    font-size: 25px;
+    display: block;
+    padding-left: 20px;
+}
+/* Ð¢ÐµÐºÑÑ‚ */
+.code_js{
+    display: blo
+}
+.about_text{
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    margin: 0;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: left;
+}
+
+/* FOOTER */
+.footer{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    background: #ffffff;
+    height: 70px;
+    width: 100%;
+}
+
+.year{
+    margin: 0; 
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 500;
+    font-size: 20px;
 }
